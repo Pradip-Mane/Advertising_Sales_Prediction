@@ -15,9 +15,7 @@ def home():
 @app.route('/predict', methods=['POST'])
 def predict():
     data=[float(x) for x in request.form.values()]               
-    
-    print(final_input)
-    output=regmodel.predict(final_input)[0]                       
+    output=regmodel.predict(data)[0]                       
     return render_template("home.html", prediction_text="The Impact of advertisiment on Sales is {}".format(output)) 
                    
     
