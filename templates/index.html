@@ -16,7 +16,7 @@
         <div class="card">
             <div class="card-image">	
                 <h2 class="card-heading">
-                    Impact of Advertisiment on Sales
+                    Impact of Advertisiment
                 </h2>
             </div>
             <form class="card-form" action="{{ url_for('predict')}}" method="POST">
@@ -40,6 +40,8 @@
 
             <center><p style="color: darkred; font-weight: bold;">{{ prediction_text }}</p>
 		<img src="{{ image }}" alt="{{ prediction_text }}">
+        <img src="{{ image }}" alt="{{ prediction_text }}">
+        <img src="{{ image }}" alt="{{ prediction_text }}">
 </center>
         </div>
     </div>

@@ -6,7 +6,7 @@
 
 body {
 	font-family: "DM Sans", sans-serif;
-	line-height: 1.5;
+	line-height: 1.0;
 	background-color: #f1f3fb;
 	padding: 0 2rem;
 }
@@ -39,7 +39,7 @@ input {
 	border-radius: 8px;
 	overflow: hidden;
 	padding-bottom: 65%;
-	background-image: url('https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/pink-iris-on-subtle-pink-marble-elaine-plesser.jpg');
+	background-image: url('https://mir-s3-cdn-cf.behance.net/projects/404/10362339.547fe408c9b6a.png');
 	background-repeat: no-repeat;
 	background-size: 150%;
 	background-position: 0 5%;
