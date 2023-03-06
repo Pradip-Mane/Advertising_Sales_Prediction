@@ -16,7 +16,7 @@ def home():
 def predict():
     data=[float(x) for x in request.form.values()]               
     output=regmodel.predict(np.array(data).reshape(1,-1))                   
-    return render_template("home.html", prediction_text="The Impact of advertisiment on Sales is {}".format(output)) 
+    return render_template("index.html", prediction_text="The Impact of advertisiment on Sales is {}".format(output[0])) 
                    
     
 if __name__=="__main__":
