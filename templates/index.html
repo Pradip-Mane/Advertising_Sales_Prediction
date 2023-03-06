@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="{{ url_for('static',filename='style.css')}}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML API</title>
+</head>
+<body>
+   
+    <div class="container">
+        <!-- code here -->
+        <div class="card">
+            <div class="card-image">	
+                <h2 class="card-heading">
+                    Impact of Advertisiment on Sales
+                </h2>
+            </div>
+            <form class="card-form" action="{{ url_for('predict')}}" method="POST">
+                <div class="input">
+                    <input name="TV" type="number" step="any"  class="input-field" required/>
+                    <label  class="input-label"> Advertisement cost on Tv</label>
+                </div>
+                            <div class="input">
+                    <input name="radio" type="number" step="any"  class="input-field" required/>
+                    <label  class="input-label">Advertisement cost on radio</label>
+                </div>
+                            <div class="input">
+                    <input name="newspaper" type="number" step="any"  class="input-field" required/>
+                    <label  class="input-label">Advertisement cost on newspaper</label>
+                </div>
+                
+                <div class="action">
+                    <button type="submit" class="action-button">Predict</button>
+                </div>
+            </form>
+
+            <center><p style="color: darkred; font-weight: bold;">{{ prediction_text }}</p>
+		<img src="{{ image }}" alt="{{ prediction }}">
+</center>
+        </div>
+    </div>
+    
+</body>
+</html>
