@@ -112,3 +112,11 @@
  * in this model p value < 0.05 therefor model is Significant  
 
  
+# Model Deployment on render
+1. README file
+2. requirements.txt
+3. app.py
+4. style.css
+5. index.html
+6. Dockerfile
+7. render.yaml
